@@ -1,18 +1,10 @@
 #!/bin/bash
-#                                   _                 _
-#                                  | |               | |
-#   _____      _____    _   _ _ __ | | ___   __ _  __| | ___ _ __
-#  / _ \ \ /\ / / _ \  | | | | '_ \| |/ _ \ / _` |/ _` |/ _ \ '__|
-#  |(_) \ V  V / (_)|  | |_| | |_) | | (_) | (_| | (_| |  __/ |
-#  \___/ \_/\_/ \___/   \__,_| .__/|_|\___/ \__,_|\__,_|\___|_|
-#                            | |
-#                            |_|
 #
-# OWOUPLOADER.SH SCRIPT.
+# MIFYUPLOADER.SH SCRIPT.
 # ----------------------
 #
 # This script is designed for you to be able to run the
-# "owo file.png" command from anywhere in your terminal
+# "mify file.png" command from anywhere in your terminal
 # client and for it to work.
 
 ##################################
@@ -26,7 +18,7 @@ fi
 if [ "${1}" = "--uninstall" ]; then
 
 	rm /usr/local/bin/mify
-	echo "INFO  : Uninstallation of owo.sh finished!"
+	echo "INFO  : Uninstallation of mify.sh finished!"
 	echo "INFO  : However APT packages have not been removed."
 
 	exit 0
@@ -55,8 +47,8 @@ function is_mac() {
 
 # Install dependencies
 if is_mac; then
-	echo "INFO  : Dependencies are unavaliable for Mac."
-	echo "INFO  : Please run \"owo --check\" to check later on."
+	echo "INFO  : Dependencies are unavailable for Mac."
+	echo "INFO  : Please run \"mify --check\" to check later on."
 else
 	(which notify-send &>/dev/null && echo "FOUND : found screencapture") || apt-get install notify-send
 	(which maim &>/dev/null && echo "FOUND : found maim") || apt-get install maim
