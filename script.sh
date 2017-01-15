@@ -1,22 +1,11 @@
 #!/bin/bash
-#                                   _                 _
-#                                  | |               | |
-#   _____      _____    _   _ _ __ | | ___   __ _  __| | ___ _ __
-#  / _ \ \ /\ / / _ \  | | | | '_ \| |/ _ \ / _` |/ _` |/ _ \ '__|
-#  |(_) \ V  V / (_)|  | |_| | |_) | | (_) | (_| | (_| |  __/ |
-#  \___/ \_/\_/ \___/   \__,_| .__/|_|\___/ \__,_|\__,_|\___|_|
-#                            | |
-#                            |_|
 #
-# mifyUPLOADER.SH SCRIPT.
+# MIFYUPLOADER.SH SCRIPT.
 # ----------------------
 #
-# This script allows for native support to upload to the image server
-# and url shortener component of whats-th.is. Through this you can do
-# plethora of actions.
-#
-# A big thank you to jomo/imgur-screenshot to which I've edited parts
-# of his script into my own.
+# This script is designed for you to be able to run the
+# "mify file.png" command from anywhere in your terminal
+# client and for it to work.
 
 if [ ! $(id -u) -ne 0 ]; then
 	echo "ERROR : This script cannot be run as sudo."
